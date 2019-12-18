@@ -1,0 +1,18 @@
+.check-section {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.check-area {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.check-area label {
+    padding-left: 10px;
+}

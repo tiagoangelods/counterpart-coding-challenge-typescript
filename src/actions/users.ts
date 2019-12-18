@@ -10,20 +10,21 @@ export interface User {
 }
 
 export interface UserVote {
-  id: string;
-  votes: Array<any>;
+  id?: string;
+  votes: Array<string>;
 }
 
 export function createUser(user: User) {
   return {
-    type: typeof CREATE_USER,
-    payload: user
+    type: CREATE_USER,
+    user
   };
 }
 
-export function updateUserVote(userVote: UserVote) {
+export function updateUserVote({id, votes}: UserVote) {
   return {
-    type: typeof UPDATE_USER_VOTE,
-    payload: userVote
+    type: UPDATE_USER_VOTE,
+    id,
+    votes
   };
 }

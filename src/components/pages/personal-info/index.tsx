@@ -6,7 +6,7 @@ import {InputSection} from '../../common/form-section/input-section';
 import {isRequired, isValidEmail} from '../../../utils/validators';
 import {uuidv4} from '../../../utils/helpers';
 
-const PersonalInfo: React.FC<RouteComponentProps> = ({history}) =>{ 
+const PersonalInfo: React.FC<RouteComponentProps> = ({history}) => { 
     const dispatch = useDispatch();
     //initial state
     const [firstName, setFirstName] = useState<string>('');

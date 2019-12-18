@@ -1,4 +1,4 @@
-import { DO_VOTE } from '../actions/services';
+import { DO_VOTE, Votes } from '../actions/services';
 
 export interface Service {
     key: string;
@@ -34,12 +34,12 @@ const initialState: Array<Service> = [
     }
 ];
 
-export default function(state = initialState, action: {type: any, payload: any}) {
+export default function(state = initialState, action: {type: any, votes: Votes}) {
     switch (action.type){
         case DO_VOTE: {
-            const { votes } = action.payload;
-            return state.map(s => {
-                if (votes.indexOf(s.key) > -1) s.votes += 1;
+            const { votes } = action;
+            return state.map((s: Service) => {
+                if (votes.votes.indexOf(s.key) > -1) s.votes += 1;
                 return s;
             });
         }

@@ -17,7 +17,7 @@ export const DataPreview: React.FC = () => {
 
     return (
         <div className="data-preview">
-            {serviceList && serviceList.map(s => (
+            {serviceList && serviceList.map((s: Service) => (
                 <div className="data-item" key={s.key}>
                     {s.logo && (<div className="service-logo"><img src={s.logo} alt={s.name} /></div>)}
                     <div className="service-name">{s.name}</div>
