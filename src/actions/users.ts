@@ -7,6 +7,7 @@ export interface User {
   middleInitial?: string;
   lastName: string;
   email: string;
+  votes?: Array<string>;
 }
 
 export interface UserVote {
