@@ -1,0 +1,54 @@
+.common-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 450px;
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+}
+
+.common-container  h1 {
+    font-size: 3rem;
+}
+
+.common-container  h1.form-title {
+    font-size: 2rem;
+}
+
+.common-container  p {
+    font-size: 2.4rem;
+}
+
+.common-container  .common-button, .cancel-button, .forward-button {
+    background-color: #ff0100;
+    width:  120px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 21px;
+}
+
+.common-container  button {
+    border: none;
+}
+
+.cancel-button, .forward-button {
+    background-color: #065fd4;
+}
+
+.common-container  .button-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 320px;
+}

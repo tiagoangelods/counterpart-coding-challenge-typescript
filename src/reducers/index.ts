@@ -2,7 +2,7 @@ import {combineReducers} from 'redux';
 import users from './users';
 import services from './services';
 
-export default combineReducers({
+export const rootReducer = combineReducers({
     users,
-    services
+    services,
 });

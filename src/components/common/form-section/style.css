@@ -1,0 +1,46 @@
+.form-section {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.form-section label {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.form-section input {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #fff;
+    padding: 6px;
+    padding-right: 0;
+}
+
+.form-section input:focus {
+    outline: none;
+    border-bottom: 1px solid #51cbee;
+}
+
+.form-section input.has-error {
+    border-bottom: 1px solid #f40000;
+}
+
+.form-section .error-section {
+    width: 100%;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ff0000;
+    text-align: left;
+    padding-top: 6px;
+}
+
+.form-section .error-section.has-error:before {
+    content: "* ";
+}

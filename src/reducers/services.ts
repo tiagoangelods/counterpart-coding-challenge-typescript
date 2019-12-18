@@ -1,6 +1,13 @@
 import { DO_VOTE } from '../actions/services';
 
-const initialState: Array<any> = [
+export interface Service {
+    key: string;
+    name: string;
+    votes: number;
+    logo: string;
+}
+
+const initialState: Array<Service> = [
     {
         key: 'google',
         name: 'Google',
