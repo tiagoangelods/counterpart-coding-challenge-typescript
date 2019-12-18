@@ -1,16 +1,17 @@
 export const CREATE_USER = 'CREATE_USER';
 export const UPDATE_USER_VOTE = 'UPDATE_USER_VOTE';
 
-interface User {
-    firstName: string;
-    middleName?: string;
-    lastName: string;
-    email: string;
+export interface User {
+  id: string;
+  firstName: string;
+  middleInitial?: string;
+  lastName: string;
+  email: string;
 }
 
-interface UserVote {
-    id: string;
-    votes: Array<any>;
+export interface UserVote {
+  id: string;
+  votes: Array<any>;
 }
 
 export function createUser(user: User) {
